@@ -1,6 +1,6 @@
 body {
   color: #2b283a;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -13,26 +13,26 @@ h3 {
 
 h1 {
   color: whitesmoke;
-  font-size: 2.25em;
+  font-size: 2.25rem; /* 36px */
 }
 
 h2 {
   color: #451c7a;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   margin-top: 0;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.25rem; /* 20px */
 }
 
 p {
-  line-height: 23px;
+  line-height: 1.5;
 }
 
 .subheading {
   display: block;
-  font-size: 0.5em;
+  font-size: 1.125rem;
   color: #d0aaff;
 }
 
@@ -53,11 +53,13 @@ a:active {
 }
 
 .btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
   padding: 0.5em 1em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
   border-radius: 4.6px;
 }
 
@@ -114,15 +116,27 @@ header,
 
 .section-two-image-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1em;
 }
 
 .feature-image {
-  width: 48.8%;
+  width: 100%;
   border-radius: 4.6px;
 }
 
 footer {
   text-align: center;
   color: #5f29a3;
+}
+
+@media (min-width: 480px) {
+  .section-two-image-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feature-image {
+    width: 48.8%;
+  }
 }
