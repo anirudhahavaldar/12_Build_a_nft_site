@@ -130,7 +130,7 @@ footer {
   color: #5f29a3;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 700px) {
   .section-two-image-container {
     flex-direction: row;
     justify-content: space-between;
